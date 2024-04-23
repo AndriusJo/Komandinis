@@ -1,0 +1,29 @@
+<button (click)="atidarytiKelionesPlanavimoLangas()">Pradėti kelionės planavimą</button>
+
+<div *ngIf="naujaKelione">
+  <label for="pradziosTaskas">Pasirinkite kelionės pradžios tašką:</label>
+  <select id="pradziosTaskas" [(ngModel)]="pasirinktasPradziosTaskas">
+    <option value="Vilnius">Vilnius</option>
+    <option value="Kaunas">Kaunas</option>
+    <option value="Klaipėda">Klaipėda</option>
+    <!-- Galite pridėti daugiau variantų pagal jūsų poreikius -->
+  </select>
+
+  <label for="pabaigosTaskas">Pasirinkite kelionės pabaigos tašką:</label>
+  <select id="pabaigosTaskas" [(ngModel)]="pasirinktasPabaigosTaskas">
+    <option value="Vilnius">Marsas</option>
+    <option value="Kaunas">Plutonas</option>
+    <option value="Klaipėda">Venera</option>
+    <!-- Galite pridėti daugiau variantų pagal jūsų poreikius -->
+  </select>
+
+  <label for="ivykimoData">Pasirinkite išvykimo datą:</label>
+  <input type="date" id="ivykimoData" [(ngModel)]="pasirinktaData">
+
+  <button (click)="pasirinktiNuomotiAutomobili()">Nuomotis automobilį</button>
+  <button (click)="pasirinktiRegistruotiBagaza()">Registruoti bagažą</button>
+  <button (click)="pasirinktiNuomuotiViesbuti()">Nuomuotis viešbutį</button>
+  <button (click)="pasirinktiPridetiPapildomasPaslaugas()">Pridėti papildomas paslaugas</button>
+
+  <button (click)="issaugotiKelionesPlana()">Išsaugoti kelionės planą</button>
+</div>
