@@ -1,0 +1,9 @@
+.sample-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+  .sample-item p {
+    margin-right: 10px;
+  }

@@ -1,7 +1,40 @@
+<style>
+  /* Navbar styles */
+  .navbar {
+    background-color: #333; /* Set background color */
+    overflow: hidden; /* Ensure proper rendering in older browsers */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow */
+  }
+
+    .navbar a {
+      float: left; /* Float the links to the left */
+      display: block; /* Make the links block-level elements */
+      color: white; /* Set text color */
+      text-align: center; /* Center-align the text */
+      padding: 14px 16px; /* Add padding */
+      text-decoration: none; /* Remove underline from links */
+      transition: background-color 0.3s; /* Smooth transition */
+    }
+
+      .navbar a:hover {
+        background-color: #ddd; /* Change background color on hover */
+        color: black; /* Change text color on hover */
+      }
+
+    /* Center the navbar links */
+    .navbar a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+</style>
+
 <nav class="navbar navbar-expand navbar-dark bg-dark">
   <div class="navbar-nav">
     <a class="nav-item nav-link" routerLink="/">Home</a>
     <a class="nav-item nav-link" routerLink="/planas">Planas</a>
+    <a class="nav-item nav-link" routerLink="/mars-perziura">Maršruto Peržiūra</a>
+    <a class="nav-item nav-link" routerLink="/mars-generavimas">Maršruto Generavimas</a>
   </div>
 </nav>
 

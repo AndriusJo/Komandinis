@@ -1,0 +1,80 @@
+<!-- route-dialog.component.html -->
+
+<style>
+  .accordion {
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+  }
+
+  .accordion-header {
+    background-color: #f4f4f4;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  .accordion-content {
+    display: none;
+    padding: 10px;
+  }
+
+  .container {
+    padding: 300px;
+  }
+
+  .center {
+    text-align: center;
+  }
+
+  .dialog-container{
+    padding: 10px;
+  }
+
+  .form-group{
+    padding: 5px;
+  }
+
+  #planetFacts{
+    resize: none;
+  }
+</style>
+
+<div class="dialog-container">
+  <h2>Sukurkite maršrutą</h2>
+  <form>
+    <div class="form-group">
+      <label for="planet">Pasirinkite išvykimo planetą:</label>
+      <select id="planet" name="planet" [(ngModel)]="selectedPlanet">
+        <option value="Earth">Žemė</option>
+        <option value="Mars">Marsas</option>
+        <option value="Venus">Venera</option>
+        <option value="Jupiter">Jupiteris</option>
+        <!-- Add more options for other planets as needed -->
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="planet">Pasirinkite kelionės tikslą:</label>
+      <select id="planet" name="planet" [(ngModel)]="selectedPlanet">
+        <option value="Earth">Žemė</option>
+        <option value="Mars">Marsas</option>
+        <option value="Venus">Venera</option>
+        <option value="Jupiter">Jupiteris</option>
+        <!-- Add more options for other planets as needed -->
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="leaveDate">Išvykimo Data:</label>
+      <input type="date" id="leaveDate" name="leaveDate" [(ngModel)]="leaveDate">
+    </div>
+    <div class="form-group">
+      <label for="arrivalDate">Atvykimo Data:</label>
+      <input type="date" id="arrivalDate" name="arrivalDate" [(ngModel)]="arrivalDate">
+    </div>
+    <div class="form-group">
+      <label for="planetFacts">Planetos Faktai:</label>
+      <textarea id="planetFacts" name="planetFacts" rows="4" resizable="false" [(ngModel)]="planetFacts"></textarea>
+    </div>
+    <div class="form-actions">
+      <button type="button" (click)="createRoute()">Sukurti Maršrutą</button>
+    </div>
+  </form>
+</div>
