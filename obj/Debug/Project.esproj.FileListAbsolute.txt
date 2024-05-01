@@ -1,2 +1,3 @@
 C:\Komandinis DISP\Komandinis\obj\Debug\Project.esproj.CoreCompileInputs.cache
 C:\Users\Gaming\Desktop\Komandinis\obj\Debug\Project.esproj.CoreCompileInputs.cache
+C:\Users\gabij\Documents\GitHub\Komandinis\obj\Debug\Project.esproj.CoreCompileInputs.cache

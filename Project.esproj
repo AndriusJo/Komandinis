@@ -7,4 +7,16 @@
     <!-- Folder where production build objects will be placed -->
     <BuildOutputFolder>$(MSBuildProjectDirectory)\dist\Project\</BuildOutputFolder>
   </PropertyGroup>
+  <ItemGroup>
+    <None Remove="src\app\NewFolder\**" />
+    <None Remove="src\NewFolder\**" />
+    <TypeScriptConfiguration Remove="src\app\NewFolder\**" />
+    <TypeScriptConfiguration Remove="src\NewFolder\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="src\app\Mano_keliones\manokeliones.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="src\app\NewFolder1\" />
+  </ItemGroup>
 </Project>

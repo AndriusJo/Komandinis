@@ -1,14 +1,22 @@
 <style>
   /* Navbar styles */
   .navbar {
-    background-color: #333; /* Set background color */
+    background-color: #45a049; /* Set background color */
     overflow: hidden; /* Ensure proper rendering in older browsers */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow */
+    display: flex; /* Use flexbox */
+    justify-content: space-between; /* Distribute items evenly */
+    align-items: center; /* Center items vertically */
+    height: 30px; /* Set navbar height to 30px */
+    padding: 20px; /* Increase padding */
   }
 
+    .navbar .navbar-left {
+      order: -1; /* Move to the left */
+      font-size: 24px; /* Set font size to 24px */
+    }
+
     .navbar a {
-      float: left; /* Float the links to the left */
-      display: block; /* Make the links block-level elements */
       color: white; /* Set text color */
       text-align: center; /* Center-align the text */
       padding: 14px 16px; /* Add padding */
@@ -17,28 +25,25 @@
     }
 
       .navbar a:hover {
-        background-color: #ddd; /* Change background color on hover */
-        color: black; /* Change text color on hover */
+        text-decoration: underline; /* Remove underline from links */
       }
-
-    /* Center the navbar links */
-    .navbar a {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
 </style>
 
 <nav class="navbar navbar-expand navbar-dark bg-dark">
+  <div class="navbar-left">
+    <a class="nav-item nav-link" routerLink="/">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Saturnx.png/1200px-Saturnx.png" alt="Logo" style="height: 30px; margin-right: 10px;">
+      KOSMINIAI MARŠRUTAI
+    </a>
+  </div>
   <div class="navbar-nav">
-    <a class="nav-item nav-link" routerLink="/">Home</a>
-    <a class="nav-item nav-link" routerLink="/planas">Planas</a>
+    <a class="nav-item nav-link" routerLink="/planas">Planuoti kelionę</a>
+    <a class="nav-item nav-link" routerLink="/manokeliones">Mano kelionės</a>
     <a class="nav-item nav-link" routerLink="/mars-perziura">Maršruto Peržiūra</a>
     <a class="nav-item nav-link" routerLink="/mars-generavimas">Maršruto Generavimas</a>
   </div>
 </nav>
 
-<!-- main content container -->
 <div class="jumbotron">
   <div class="container">
     <div class="row">
