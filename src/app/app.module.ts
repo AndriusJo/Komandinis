@@ -18,6 +18,7 @@ import { MarsrutoGeneravimasComponent } from './marsruto-generavimas/marsruto-ge
 import { MarsGeneravimoDialogComponent } from './mars-generavimo-dialog/mars-generavimo-dialog.component';
 import { PaslauguDialogComponent } from './paslaugu-dialog/paslaugu-dialog.component';
 import { MatCheckboxModule } from '@angular/material/checkbox';
+import { KelioniuPerziuraComponent } from './Kelioniu-perziura/Kelioniu-perziura.component';
 
 
 @NgModule({
@@ -26,6 +27,7 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
     PlanasComponent,
     HomeComponent,
     BagazoDialogComponent,
+    KelioniuPerziuraComponent,
     MarsrutoZiurejimasComponent,
     MarsrutoGeneravimasComponent,
     MarsGeneravimoDialogComponent,

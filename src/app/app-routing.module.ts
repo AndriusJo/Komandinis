@@ -7,10 +7,12 @@ import { BagazoDialogComponent } from "./bagazo-dialog/bagazo-dialog.component"
 import { MarsrutoZiurejimasComponent } from './marsruto-ziurejimas/marsruto-ziurejimas.component';
 import { MarsrutoGeneravimasComponent } from './marsruto-generavimas/marsruto-generavimas.component';
 import { ManoKelionesComponent } from "./Mano_keliones/manokeliones.component";
+import { KelioniuPerziuraComponent } from './Kelioniu-perziura/Kelioniu-perziura.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'planas', component: PlanasComponent },
+  { path: 'kel-perziura', component: KelioniuPerziuraComponent },
   { path: 'mars-perziura', component: MarsrutoZiurejimasComponent },
   { path: 'mars-generavimas', component: MarsrutoGeneravimasComponent },
   { path: 'manokeliones', component: ManoKelionesComponent },
