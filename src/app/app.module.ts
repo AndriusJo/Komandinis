@@ -19,6 +19,8 @@ import { MarsGeneravimoDialogComponent } from './mars-generavimo-dialog/mars-gen
 import { PaslauguDialogComponent } from './paslaugu-dialog/paslaugu-dialog.component';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { KelioniuPerziuraComponent } from './Kelioniu-perziura/Kelioniu-perziura.component';
+import { ServeriuStebejimasComponent } from './serveriu-stebejimas/serveriu-stebejimas.component';
+import { ProfilioLangasComponent } from './profilio-langas/profilio-langas.component';
 
 
 @NgModule({
@@ -31,7 +33,9 @@ import { KelioniuPerziuraComponent } from './Kelioniu-perziura/Kelioniu-perziura
     MarsrutoZiurejimasComponent,
     MarsrutoGeneravimasComponent,
     MarsGeneravimoDialogComponent,
-    PaslauguDialogComponent
+    PaslauguDialogComponent,
+    ServeriuStebejimasComponent,
+    ProfilioLangasComponent,
   ],
   imports: [
     BrowserModule,
@@ -44,7 +48,7 @@ import { KelioniuPerziuraComponent } from './Kelioniu-perziura/Kelioniu-perziura
     RouterModule,
     AppRoutingModule,
     MatExpansionModule,
-    MatCheckboxModule
+    MatCheckboxModule,
   ],
   providers: [
     provideAnimationsAsync()
