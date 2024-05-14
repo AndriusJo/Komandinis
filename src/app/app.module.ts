@@ -21,6 +21,7 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { KelioniuPerziuraComponent } from './Kelioniu-perziura/Kelioniu-perziura.component';
 import { ServeriuStebejimasComponent } from './serveriu-stebejimas/serveriu-stebejimas.component';
 import { ProfilioLangasComponent } from './profilio-langas/profilio-langas.component';
+import { KajutesPlanavimasComponent } from './kajutes-planavimas/kajutes-planavimas.component';
 
 
 @NgModule({
@@ -36,6 +37,7 @@ import { ProfilioLangasComponent } from './profilio-langas/profilio-langas.compo
     PaslauguDialogComponent,
     ServeriuStebejimasComponent,
     ProfilioLangasComponent,
+    KajutesPlanavimasComponent,
   ],
   imports: [
     BrowserModule,

@@ -10,6 +10,7 @@ import { ManoKelionesComponent } from "./Mano_keliones/manokeliones.component";
 import { KelioniuPerziuraComponent } from './Kelioniu-perziura/Kelioniu-perziura.component';
 import { ServeriuStebejimasComponent } from './serveriu-stebejimas/serveriu-stebejimas.component';
 import { ProfilioLangasComponent } from './profilio-langas/profilio-langas.component';
+import { KajutesPlanavimasComponent } from './kajutes-planavimas/kajutes-planavimas.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -20,6 +21,7 @@ const routes: Routes = [
   { path: 'manokeliones', component: ManoKelionesComponent },
   { path: 'serveriu-stebejimas', component: ServeriuStebejimasComponent },
   { path: 'profilio-langas', component: ProfilioLangasComponent },
+  { path: 'kajutes-planavimas', component: KajutesPlanavimasComponent },
   { path: '**', redirectTo: '' },
 ];
 

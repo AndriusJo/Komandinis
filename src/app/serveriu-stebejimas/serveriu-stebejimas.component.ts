@@ -8,14 +8,15 @@ import { MatDialogRef } from '@angular/material/dialog';
 })
 export class ServeriuStebejimasComponent {
   planets = [
-    { name: 'Mercury', gif: 'e82d2619658459562de1c02af68.gif' },
+    { name: 'Merkurijus', gif: 'e82d2619658459562de1c02af68.gif' },
     { name: 'Venus', gif: 'e82d2619658459562de1c02af68.gif' },
-    { name: 'Earth', gif: 'e82d2619658459562de1c02af68.gif' },
-    { name: 'Mars', gif: 'e82d2619658459562de1c02af68.gif' },
-    { name: 'Jupiter', gif: 'e82d2619658459562de1c02af68.gif' },
-    { name: 'Saturn', gif: 'e82d2619658459562de1c02af68.gif' },
-    { name: 'Uranus', gif: 'e82d2619658459562de1c02af68.gif' },
-    { name: 'Neptune', gif: 'e82d2619658459562de1c02af68.gif' },
-    { name: 'Pluto', gif: 'e82d2619658459562de1c02af68.gif' }
+    { name: 'Žemė', gif: 'e82d2619658459562de1c02af68.gif' },
+    { name: 'Marsas', gif: 'e82d2619658459562de1c02af68.gif' },
+    { name: 'Jupiteris', gif: 'e82d2619658459562de1c02af68.gif' },
+    { name: 'Saturnas', gif: 'e82d2619658459562de1c02af68.gif' },
+    { name: 'Uransas', gif: 'e82d2619658459562de1c02af68.gif' },
+    { name: 'Neptūnas', gif: 'e82d2619658459562de1c02af68.gif' },
+    { name: 'Plutonas', gif: 'e82d2619658459562de1c02af68.gif' }
   ];
+
 }

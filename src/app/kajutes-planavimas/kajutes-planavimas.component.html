@@ -1,0 +1,12 @@
+<div class="page-container">
+  <h1>Kajutės baldų išdėstymas:</h1>
+  <div class="grid-container">
+    <div class="grid-item" *ngFor="let image of images">
+      <div class="image-container">
+        <img [src]="'/assets/rooms/' + image.name">
+      </div>
+      <p>{{ image.opt }}</p>
+    </div>
+  </div>
+</div>
+
