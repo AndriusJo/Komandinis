@@ -1,0 +1,28 @@
+.page-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.image-container {
+  cursor: pointer;
+  min-width: 300px;
+}
+
+  .image-container img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.2s;
+  }
+
+  .image-container:hover img {
+    transform: scale(1.05);
+  }

@@ -1,0 +1,10 @@
+<div class="page-container">
+  <div class="grid-container">
+    <div class="grid-item" *ngFor="let planet of planets">
+      <p>{{ planet.name }}</p>
+      <div class="image-container">
+        <img [src]="'/assets/' + planet.gif" alt="{{ planet.name }}">
+      </div>
+    </div>
+  </div>
+</div>

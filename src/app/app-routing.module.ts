@@ -8,6 +8,9 @@ import { MarsrutoZiurejimasComponent } from './marsruto-ziurejimas/marsruto-ziur
 import { MarsrutoGeneravimasComponent } from './marsruto-generavimas/marsruto-generavimas.component';
 import { ManoKelionesComponent } from "./Mano_keliones/manokeliones.component";
 import { KelioniuPerziuraComponent } from './Kelioniu-perziura/Kelioniu-perziura.component';
+import { ServeriuStebejimasComponent } from './serveriu-stebejimas/serveriu-stebejimas.component';
+import { ProfilioLangasComponent } from './profilio-langas/profilio-langas.component';
+import { KajutesPlanavimasComponent } from './kajutes-planavimas/kajutes-planavimas.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -16,14 +19,15 @@ const routes: Routes = [
   { path: 'mars-perziura', component: MarsrutoZiurejimasComponent },
   { path: 'mars-generavimas', component: MarsrutoGeneravimasComponent },
   { path: 'manokeliones', component: ManoKelionesComponent },
+  { path: 'serveriu-stebejimas', component: ServeriuStebejimasComponent },
+  { path: 'profilio-langas', component: ProfilioLangasComponent },
+  { path: 'kajutes-planavimas', component: KajutesPlanavimasComponent },
   { path: '**', redirectTo: '' },
 ];
 
 @NgModule({
   imports: [
     RouterModule.forRoot(routes),
-    
-
   ],
   exports: [RouterModule]
 })
