@@ -18,19 +18,5 @@ export class ManoKelionesComponent {
     this.naujaKelione = true;
   }
 
-  pasirinktiNuomotiAutomobili() {
-    // Čia galite įgyvendinti automobilių nuomos pasiūlymų langą
-    console.log('Pasirinkti nuomoti automobilį');
-  }
 
-  pasirinktiNuomuotiViesbuti() {
-    // Čia galite įgyvendinti viešbučių peržiūros langą
-    console.log('Pasirinkti nuomuoti viešbutį');
-  }
-
-
-  issaugotiKelionesPlana() {
-    // Čia galite įgyvendinti kelionės plano išsaugojimą
-    console.log('Išsaugoti kelionės planą');
-  }
 }

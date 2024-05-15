@@ -1,8 +1,39 @@
-<h1> Pagrindinis langas </h1>
-<p>
-</p>
 <style>
-  p {
-    background-image: url('https://estesrockets.com/cdn/shop/files/Homepage_Shuttle_2000x600_fc12e5d4-207d-4d9f-a77d-4d9306c1b9c9.jpg?v=1697059683&width=3840');
+  .container {
+    position: relative;
+    width: auto;
+    height: auto;
   }
+
+    /* Make the image responsive */
+    .container img {
+      width: 100%;
+      height: 100%;
+    }
+
+    /* Style the button and place it in the middle of the container/image */
+    .container .btn {
+      position: absolute;
+      top: 50%;
+      left: 80%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      background-color: gray;
+      color: white;
+      font-size: 16px;
+      padding: 12px 24px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .container .btn:hover {
+      background-color: black;
+    }
 </style>
+
+<div class="container">
+  <img src="../../assets/mainpagebg.jpg" />
+  <button class="btn" routerLink="/planas">
+    PRADĖTI
+  </button>
+</div>
