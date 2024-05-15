@@ -3,7 +3,8 @@ import { MatDialog } from '@angular/material/dialog';
 import { Router } from '@angular/router'; // Step 1: Import Router
 import { BagazoDialogComponent } from '../bagazo-dialog/bagazo-dialog.component';
 import { PaslauguDialogComponent } from '../paslaugu-dialog/paslaugu-dialog.component';
-
+import { MarsGeneravimoDialogComponent } from '../mars-generavimo-dialog/mars-generavimo-dialog.component';
+import { MGComponent } from '../Marsruto-generavimas-dialog/mgd.component';
 @Component({
   templateUrl: './planas.component.html',
   styleUrl: './planas.component.css'
@@ -67,5 +68,17 @@ export class PlanasComponent {
     // Process form data here if needed
     // Redirect to home page
     this.router.navigate(['/home']); // Replace '/home' with the route of your home page
+  }
+
+  pasirinktiGeneruotiMarsruta() {
+    const dialogRef = this.dialog.open(MGComponent, {
+      width: '300px',
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log('The dialog was closed', result);
+      // Handle the result here
+    });
+    console.log('Pasirinkti registruoti bagažą');
   }
 }

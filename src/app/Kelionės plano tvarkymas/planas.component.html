@@ -31,12 +31,26 @@
         <input type="date" id="ivykimoData" [(ngModel)]="pasirinktaData">
       </div>
       <div class="button-container">
-        <button  class="button1" (click)="pasirinktiNuomotiAutomobili()">Nuomotis automobilį</button>
-        <button  class="button1" (click)="pasirinktiRegistruotiBagaza()">Registruoti bagažą</button>
-        <button  class="button1" (click)="pasirinktiNuomuotiViesbuti()">Nuomuotis viešbutį</button>
-        <button  class="button1" (click)="pasirinktiPridetiPapildomasPaslaugas()">Pridėti papildomas paslaugas</button>
+        <button class="button1" (click)="pasirinktiNuomotiAutomobili()">Nuomotis automobilį</button>
+        <button class="button1" (click)="pasirinktiRegistruotiBagaza()">Registruoti bagažą</button>
+        <button class="button1" (click)="pasirinktiNuomuotiViesbuti()">Nuomuotis viešbutį</button>
+        <button class="button1" (click)="pasirinktiPridetiPapildomasPaslaugas()">Pridėti papildomas paslaugas</button>
       </div>
-      <button class="button2" (click)="submitForm()" type="submit" >Išsaugoti</button>
+      <button class="button2" (click)="submitForm()" type="submit">Išsaugoti</button>
+
+      <br>
+      <div style="margin: auto">
+        <b style="font-size: 25px">ARBA</b>
+      </div>
+
+      <br>
+      <div style="align-content: center">
+        <a href="/marsrutogeneravimas.component.html">
+          <button class="button2" (click)="pasirinktiGeneruotiMarsruta()">Generuoti maršrutą pagal horoskopo ženklą</button>
+        </a>
+      </div>
     </form>
   </div>
 </body>
+
+

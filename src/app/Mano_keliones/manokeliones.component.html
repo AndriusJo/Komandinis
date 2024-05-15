@@ -20,12 +20,12 @@
     background-color: white;
     box-shadow: 0 0 5px 5px #8fa190;
     padding: 25px;
-    flex-direction: column;
+    flex-direction: row;
   }
 
   img {
-      height: 40px;
-      width: 40px;
+    height: 40px;
+    width: 40px;
   }
 
   .arrow {
@@ -45,38 +45,61 @@
 <div class="flex-container">
   <div>
     <b>Nėra užsakytų kelionių</b>
+    <p style="margin-bottom: auto">Įveskite rezervacijos numerį, jei norite rasti savo užsakymą, arba suplanuokitę naują kelionę!</p>
+
+    <a href="/planas">
+      <button>
+        Planuoti naują kelionę
+      </button>
+    </a>
+
+    <a href="/planas">
+      <button>
+        Rasti užsakymą
+      </button>
+    </a>
   </div>
-  
-  
-  <div style="margin-bottom: auto">
-    <p>Įveskite rezervacijos numerį, jei norite rasti savo užsakymą, arba suplanuokitę naują kelionę!</p>
-  </div>
-  <a href="/planas">
-    <button>
-      Planuoti naują kelionę
-    </button>
-   </a>
-    <button>Rasti užsakymą</button>
 </div>
 
 <br />
 <h3>Jūsų kelionių istorija</h3>
-<div>
-  <b>Saturnas - Žemė</b>
-  <p>Sausio 1 - Rugpjūčio 30 • Rezervacijos numeris: SATZEM • Du asmenys</p>
+
+<div class="flex-container">
+  <div>
+    <b>Saturnas - Žemė</b>
+    <p>Sausio 1 - Rugpjūčio 30 • Rezervacijos numeris: SATZEM • Du asmenys</p>
+  </div>
+
+  <div style="margin-left: auto">
+    <img src="../../assets/saturn.png" />
+    <img class="arrow" src="../../assets/arrow.png" />
+    <img src="../../assets/earth.png" />
+  </div>
 </div>
 
 <br />
-<div>
-  <b>Marsas - Saturnas</b>
-  <p class="flex-item">Spalio 22 - Gruodžio 22 • Rezervacijos numeris: MARSAT • Vienas asmuo</p>
+<div class="flex-container">
+  <div>
+    <b>Marsas - Saturnas</b>
+    <p class="flex-item">Spalio 22 - Gruodžio 22 • Rezervacijos numeris: MARSAT • Vienas asmuo</p>
+  </div>
+
+  <div style="margin-left: auto">
+    <img src="../../assets/mars.png" />
+    <img class="arrow" src="../../assets/arrow.png" />
+    <img src="../../assets/saturn.png" />
+  </div>
 </div>
 
 <br />
-<div>
-  <b>Žemė - Marsas</b>
-  <p>Birželio 3 - Rugsėjo 2 • Rezervacijos numeris: ZEMSAT • Vienas asmuo</p>
-  <img src="../../assets/earth.png" />
-  <img class="arrow" src="../../assets/arrow.png" />
-  <img src="../../assets/mars.png" />
+<div class="flex-container">
+  <div>
+    <b>Žemė - Marsas</b>
+    <p>Birželio 3 - Rugsėjo 2 • Rezervacijos numeris: ZEMSAT • Vienas asmuo</p>
+  </div>
+  <div style="margin-left: auto">
+    <img src="../../assets/earth.png" />
+    <img class="arrow" src="../../assets/arrow.png" />
+    <img src="../../assets/mars.png" />
+  </div>
 </div>

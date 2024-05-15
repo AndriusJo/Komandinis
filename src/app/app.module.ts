@@ -22,7 +22,7 @@ import { KelioniuPerziuraComponent } from './Kelioniu-perziura/Kelioniu-perziura
 import { ServeriuStebejimasComponent } from './serveriu-stebejimas/serveriu-stebejimas.component';
 import { ProfilioLangasComponent } from './profilio-langas/profilio-langas.component';
 import { KajutesPlanavimasComponent } from './kajutes-planavimas/kajutes-planavimas.component';
-
+import { MGComponent } from "./Marsruto-generavimas-dialog/mgd.component";
 
 @NgModule({
   declarations: [
@@ -38,6 +38,7 @@ import { KajutesPlanavimasComponent } from './kajutes-planavimas/kajutes-planavi
     ServeriuStebejimasComponent,
     ProfilioLangasComponent,
     KajutesPlanavimasComponent,
+    MGComponent,
   ],
   imports: [
     BrowserModule,

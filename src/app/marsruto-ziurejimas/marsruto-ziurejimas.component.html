@@ -28,66 +28,78 @@
       padding-top: 20px;
       text-align: center;
     }
-    
+
+    mat-expansion-panel {
+      width: 50%;
+      align-self: auto;
+      background-repeat: no-repeat;
+      background-position: right;
+    }
+
+    .divac {
+      margin-left: 640px
+    }
   </style>
 </head>
 <body>
   <div class="center">
     <h1>Maršrutų detalės</h1>
   </div>
-  <div class="container">
-  <!-- Accordion for Mars -->
-  <mat-accordion>
-    <mat-expansion-panel>
-      <mat-expansion-panel-header>
-        <mat-panel-title>
-          Žemė - Marso maršruto detalės
-        </mat-panel-title>
-      </mat-expansion-panel-header>
-      <p><strong>Išvykimo data:</strong> Liepa 2026</p>
-      <p><strong>Atvykimo data:</strong> Vasaris 2027</p>
-      <p><strong>Kelionės trukmė:</strong> ~ 7 mėnesiai</p>
-      <p>
-        <strong>Marso faktai:</strong> Marsas – ketvirtoji pagal atstumą nuo Saulės (tarp Žemės ir Jupiterio) ir antroji mažiausia Saulės sistemos planeta po Merkurijaus. Iš Žemės neretai matomas plika akimi kaip ryški rausvos spalvos žvaigždė. Vidutinis absoliutinis ryškis – +0,71, tačiau menamas ryškis gali siekti −2,94, ryškumu nusileidžiąs tik Venerai, Mėnuliui ir Saulei. Glapluko gimtoji planeta. Dėl rausvo atspalvio žvelgiant iš Žemės kartais vadinama „raudonąja planeta“. Charakteringą spalvą Marsui suteikia trivalentis geležies oksidas, kurio gausu planetoje. Planetos pavadinimas kilęs iš romėnų karo dievo Marso (graikų Arėjo atitikmuo). Atitinkamai pavadinti ir maži, netaisyklingos formos Marso palydovai Fobas ir <a href="https://www.ubisoft.com/en-gb/game/rainbow-six/siege/game-info/operators/deimos">Deimas</a>, kurie graikų mitologijoje yra Arėjo sūnūs, lydintys jį mūšyje.</p>
-    </mat-expansion-panel>
-  </mat-accordion>
 
-  <!-- Accordion for Venus -->
-  <mat-accordion>
-    <mat-expansion-panel>
-      <mat-expansion-panel-header>
-        <mat-panel-title>
-          Žemė - Venera maršruto detalės
-        </mat-panel-title>
-      </mat-expansion-panel-header>
-      <p><strong>Išvykimo data:</strong> Sausis 2027</p>
-      <p><strong>Atvykimo data:</strong> Rugsėjis 2027</p>
-      <p><strong>Kelionės trukmė:</strong> ~ 9 mėnesiai</p>
-      <p>
-        <strong>Veneros faktai:</strong> Venera (sen. lietuvių pavadinimai: Aušrinė, Vakarinė) – antroji pagal atstumą nuo Saulės planeta (tarp Merkurijaus ir Žemės). Po Mėnulio tai – antrasis pagal šviesumą objektas naktiniame danguje (iki –4,6 ryškio), maksimumą pasiekiantis tuoj pat po saulėlydžio arba prieš pat saulėtekį.</p>
-    </mat-expansion-panel>
-  </mat-accordion>
+  <div class="divac">
+    <!-- Accordion for Mars -->
+    <mat-accordion>
+      <mat-expansion-panel style="background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url(https://i.guim.co.uk/img/media/46d7ffb8a60db50d5c7b9e7046ad71f2398f4a0e/98_0_3304_1983/master/3304.jpg?width=1200&height=900&quality=85&auto=format&fit=crop&s=18fbb9c367d91655b49e993593992e4b) !important">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Žemė - Marso maršruto detalės
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <p><strong>Išvykimo data:</strong> Liepa 2026</p>
+        <p><strong>Atvykimo data:</strong> Vasaris 2027</p>
+        <p><strong>Kelionės trukmė:</strong> ~ 7 mėnesiai</p>
+        <p>
+          <strong>Marso faktai:</strong> Marsas – ketvirtoji pagal atstumą nuo Saulės (tarp Žemės ir Jupiterio) ir antroji mažiausia Saulės sistemos planeta po Merkurijaus. Iš Žemės neretai matomas plika akimi kaip ryški rausvos spalvos žvaigždė. Vidutinis absoliutinis ryškis – +0,71, tačiau menamas ryškis gali siekti −2,94, ryškumu nusileidžiąs tik Venerai, Mėnuliui ir Saulei. Glapluko gimtoji planeta. Dėl rausvo atspalvio žvelgiant iš Žemės kartais vadinama „raudonąja planeta“. Charakteringą spalvą Marsui suteikia trivalentis geležies oksidas, kurio gausu planetoje. Planetos pavadinimas kilęs iš romėnų karo dievo Marso (graikų Arėjo atitikmuo). Atitinkamai pavadinti ir maži, netaisyklingos formos Marso palydovai Fobas ir <a href="https://www.ubisoft.com/en-gb/game/rainbow-six/siege/game-info/operators/deimos">Deimas</a>, kurie graikų mitologijoje yra Arėjo sūnūs, lydintys jį mūšyje.
+        </p>
+      </mat-expansion-panel>
+    </mat-accordion>
 
-  <!-- Accordion for Jupiter -->
-  <mat-accordion>
-    <mat-expansion-panel>
-      <mat-expansion-panel-header>
-        <mat-panel-title>
-          Žemė - Jupiteris maršruto detalės
-        </mat-panel-title>
-      </mat-expansion-panel-header>
-      <p><strong>Išvykimo data:</strong> Geguže 2027</p>
-      <p><strong>Atvykimo data:</strong> Gruodis 2027</p>
-      <p><strong>Kelionės trukmė:</strong> ~ 7 mėnesiai</p>
-      <p>
-        <strong>Jupiterio Faktai:</strong> Jupiteris (sen. lietuvių pavadinimas Indraja) – penktoji pagal nuotolį nuo Saulės sistemos planeta (tarp Marso ir Saturno), dujinė milžinė. Turi žiedų sistemą.
+    <!-- Accordion for Venus -->
+    <mat-accordion>
+      <mat-expansion-panel style="background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url(https://www.konstanta.lt/wp-content/uploads/2019/11/venera.jpg) !important ">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Žemė - Venera maršruto detalės
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <p><strong>Išvykimo data:</strong> Sausis 2027</p>
+        <p><strong>Atvykimo data:</strong> Rugsėjis 2027</p>
+        <p><strong>Kelionės trukmė:</strong> ~ 9 mėnesiai</p>
+        <p>
+          <strong>Veneros faktai:</strong> Venera (sen. lietuvių pavadinimai: Aušrinė, Vakarinė) – antroji pagal atstumą nuo Saulės planeta (tarp Merkurijaus ir Žemės). Po Mėnulio tai – antrasis pagal šviesumą objektas naktiniame danguje (iki –4,6 ryškio), maksimumą pasiekiantis tuoj pat po saulėlydžio arba prieš pat saulėtekį.
+        </p>
+      </mat-expansion-panel>
+    </mat-accordion>
 
-        Kaip ir kitos planetos, Jupiteris aplink Saulę skrieja ištęsta elipsine orbita, kurios viename židinyje yra Saulė. Nuotolis tarp Saulės ir Jupiterio kinta nuo 740 mln. iki 816 mln. km, Saulę apskrieja per 11,86 Žemės metų. Tai – didžiausia Saulės sistemos planeta, kurios skersmuo už Žemės didesnis 11 kartų, tūris – 1331 kartą, o masė – 317 kartų.
-      </p>
-    </mat-expansion-panel>
-  </mat-accordion>
+    <!-- Accordion for Jupiter -->
+    <mat-accordion>
+      <mat-expansion-panel style="background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url(https://scx2.b-cdn.net/gfx/news/hires/2022/first-3d-renders-from.jpg) !important ">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Žemė - Jupiteris maršruto detalės
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <p><strong>Išvykimo data:</strong> Geguže 2027</p>
+        <p><strong>Atvykimo data:</strong> Gruodis 2027</p>
+        <p><strong>Kelionės trukmė:</strong> ~ 7 mėnesiai</p>
+        <p>
+          <strong>Jupiterio Faktai:</strong> Jupiteris (sen. lietuvių pavadinimas Indraja) – penktoji pagal nuotolį nuo Saulės sistemos planeta (tarp Marso ir Saturno), dujinė milžinė. Turi žiedų sistemą.
 
-    <!-- Accordion for -->
-    </div>
+          Kaip ir kitos planetos, Jupiteris aplink Saulę skrieja ištęsta elipsine orbita, kurios viename židinyje yra Saulė. Nuotolis tarp Saulės ir Jupiterio kinta nuo 740 mln. iki 816 mln. km, Saulę apskrieja per 11,86 Žemės metų. Tai – didžiausia Saulės sistemos planeta, kurios skersmuo už Žemės didesnis 11 kartų, tūris – 1331 kartą, o masė – 317 kartų.
+        </p>
+      </mat-expansion-panel>
+    </mat-accordion>
+  </div>
+  <!-- Accordion for -->
 </body>
 </html>
