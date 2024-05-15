@@ -2,8 +2,8 @@
   <div class="grid-container">
     <div class="grid-item" *ngFor="let planet of planets">
       <p>{{ planet.name }}</p>
-      <div class="image-container">
-        <img [src]="'/assets/' + planet.gif" alt="{{ planet.name }}">
+      <div class="image-container" (click)="openDialog()">
+        <img [src]="'/assets/' + planet.image" alt="{{ planet.name }}">
       </div>
     </div>
   </div>

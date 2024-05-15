@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { MatDialogRef } from '@angular/material/dialog';
+import { MatDialog } from '@angular/material/dialog';
+import { ServerGifDialogComponent } from '../server-gif-dialog/server-gif-dialog.component';
 
 @Component({
   selector: 'app-serveriu-stebejimas',
@@ -8,15 +10,23 @@ import { MatDialogRef } from '@angular/material/dialog';
 })
 export class ServeriuStebejimasComponent {
   planets = [
-    { name: 'Merkurijus', gif: 'e82d2619658459562de1c02af68.gif' },
-    { name: 'Venus', gif: 'e82d2619658459562de1c02af68.gif' },
-    { name: 'Žemė', gif: 'e82d2619658459562de1c02af68.gif' },
-    { name: 'Marsas', gif: 'e82d2619658459562de1c02af68.gif' },
-    { name: 'Jupiteris', gif: 'e82d2619658459562de1c02af68.gif' },
-    { name: 'Saturnas', gif: 'e82d2619658459562de1c02af68.gif' },
-    { name: 'Uransas', gif: 'e82d2619658459562de1c02af68.gif' },
-    { name: 'Neptūnas', gif: 'e82d2619658459562de1c02af68.gif' },
-    { name: 'Plutonas', gif: 'e82d2619658459562de1c02af68.gif' }
+    { name: 'Merkurijus', image: 'mercury.png' },
+    { name: 'Venera', image: 'venus.png' },
+    { name: 'Žemė', image: 'earth.png' },
+    { name: 'Marsas', image: 'mars.png' },
+    { name: 'Jupiteris', image: 'jupiter.png' },
+    { name: 'Saturnas', image: 'saturn.png' },
+    { name: 'Uranas', image: 'uranus.png' },
+    { name: 'Neptūnas', image: 'neptune.png' },
+    { name: 'Plutonas', image: 'pluto.png' },
+    { name: 'server', gif: 'server.gif'}
   ];
+  constructor(public dialog: MatDialog) {}
 
+  openDialog(): void {
+    this.dialog.open(ServerGifDialogComponent, {
+      width: '600px',
+      data: { gif: 'server.gif' }
+    });
+  }
 }

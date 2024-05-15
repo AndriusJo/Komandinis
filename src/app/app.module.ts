@@ -23,6 +23,7 @@ import { ServeriuStebejimasComponent } from './serveriu-stebejimas/serveriu-steb
 import { ProfilioLangasComponent } from './profilio-langas/profilio-langas.component';
 import { KajutesPlanavimasComponent } from './kajutes-planavimas/kajutes-planavimas.component';
 import { MGComponent } from "./Marsruto-generavimas-dialog/mgd.component";
+import { ServerGifDialogComponent } from './server-gif-dialog/server-gif-dialog.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +40,7 @@ import { MGComponent } from "./Marsruto-generavimas-dialog/mgd.component";
     ProfilioLangasComponent,
     KajutesPlanavimasComponent,
     MGComponent,
+    ServerGifDialogComponent,
   ],
   imports: [
     BrowserModule,
