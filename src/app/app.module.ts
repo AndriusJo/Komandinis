@@ -44,6 +44,9 @@ import { TransportoPasiūlymaiComponent } from "./planetų-transporto-priemonių
     KajutesPlanavimasComponent,
     MGComponent,
     ServerGifDialogComponent,
+    PrisijungimasComponent,
+    RegistravimasComponent,
+    TransportoPasiūlymaiComponent,
   ],
   imports: [
     BrowserModule,
