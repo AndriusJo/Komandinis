@@ -12,6 +12,9 @@ import { ServeriuStebejimasComponent } from './serveriu-stebejimas/serveriu-steb
 import { ProfilioLangasComponent } from './profilio-langas/profilio-langas.component';
 import { KajutesPlanavimasComponent } from './kajutes-planavimas/kajutes-planavimas.component';
 import { MGComponent } from "./Marsruto-generavimas-dialog/mgd.component";
+import { PrisijungimasComponent } from "./prisijungimo-langas/prisijungimas.component";
+import { RegistravimasComponent } from "./registravimo-langas/registravimas.component";
+import { TransportoPasiūlymaiComponent } from "./planetų-transporto-priemonių-pasiūlymai/transporto-pasiūlymai.component";
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -23,6 +26,9 @@ const routes: Routes = [
   { path: 'serveriu-stebejimas', component: ServeriuStebejimasComponent },
   { path: 'profilio-langas', component: ProfilioLangasComponent },
   { path: 'kajutes-planavimas', component: KajutesPlanavimasComponent },
+  { path: 'prisijungti', component: PrisijungimasComponent },
+  { path: 'registracija', component: RegistravimasComponent },
+  { path: 'transporto-pasiūlymai', component: TransportoPasiūlymaiComponent },
   { path: '**', redirectTo: '' },
 ];
 
