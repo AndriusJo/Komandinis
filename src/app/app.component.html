@@ -27,6 +27,55 @@
       .navbar a:hover {
         text-decoration: underline; /* Remove underline from links */
       }
+  button {
+    display: inline-block;
+    border-radius: 50px;
+    background-color: #72EB45;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 14px;
+    padding: 5px;
+    width: 100px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  button:hover span {
+    padding-right: 25px;
+  }
+  
+  button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
 </style>
 
 <nav class="navbar navbar-expand navbar-dark bg-dark">
@@ -49,6 +98,7 @@
     <a class="nav-item nav-link" routerLink="/registracija">Registruotis</a>
     <a class="nav-item nav-link" routerLink="/transporto-pasiūlymai">Transportas</a>
   </div>
+  <a class="nav-item nav-link" routerLink="/#"><button  type="button" align="right"><span>Atsijungti</span></button></a>
 </nav>
 
 <div class="jumbotron">
