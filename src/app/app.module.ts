@@ -14,6 +14,8 @@ import { MatInputModule } from '@angular/material/input';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MarsrutoZiurejimasComponent } from './marsruto-ziurejimas/marsruto-ziurejimas.component';
 import { MatExpansionModule } from '@angular/material/expansion';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatSelectModule } from '@angular/material/select';
 import { MarsrutoGeneravimasComponent } from './marsruto-generavimas/marsruto-generavimas.component';
 import { MarsGeneravimoDialogComponent } from './mars-generavimo-dialog/mars-generavimo-dialog.component';
 import { PaslauguDialogComponent } from './paslaugu-dialog/paslaugu-dialog.component';
@@ -54,6 +56,8 @@ import { ServerGifDialogComponent } from './server-gif-dialog/server-gif-dialog.
     AppRoutingModule,
     MatExpansionModule,
     MatCheckboxModule,
+    MatFormFieldModule,
+    MatSelectModule
   ],
   providers: [
     provideAnimationsAsync()

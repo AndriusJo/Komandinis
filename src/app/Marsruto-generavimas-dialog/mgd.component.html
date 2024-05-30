@@ -1,7 +1,56 @@
-<h2 mat-dialog-title>Maršruto generavimas pagal horoskopo ženklą</h2>
-<div mat-dialog-content>
-  <!--Cia rašyk boxo contenta-->
+<style>
+  .white-text {
+    color: white;
+  }
+
+    .white-text .mat-dialog-title,
+    .white-text mat-form-field,
+    .white-text mat-form-field .mat-label,
+    .white-text mat-option,
+    .white-text mat-option .mat-option-text,
+    .white-text button,
+    .white-text p {
+      color: white !important;
+    }
+
+  /* Optional: If you want to style the button's background and border for better visibility */
+  .mat-button {
+    border: 1px solid white;
+  }
+
+  .mat-button-primary {
+    background-color: transparent;
+  }
+</style>
+
+<h2 mat-dialog-title style="text-align:center">Maršruto generavimas pagal horoskopo ženklą</h2>
+<div mat-dialog-content class="white-text">
+  <form #zodiacForm="ngForm" (ngSubmit)="generateRoute()">
+    <mat-form-field appearance="fill" style="align-items:center">
+      <mat-label style="color:white">Pasirinkite savo horoskopo ženklą</mat-label>
+      <mat-select [(ngModel)]="selectedSign" name="zodiacSign" required>
+        <mat-option value="aries">Avinas</mat-option>
+        <mat-option value="taurus">Jautis</mat-option>
+        <mat-option value="gemini">Dvyniai</mat-option>
+        <mat-option value="cancer">Vėžys</mat-option>
+        <mat-option value="leo">Liūtas</mat-option>
+        <mat-option value="virgo">Mergelė</mat-option>
+        <mat-option value="libra">Svarstyklės</mat-option>
+        <mat-option value="scorpio">Skorpionas</mat-option>
+        <mat-option value="sagittarius">Šaulys</mat-option>
+        <mat-option value="capricorn">Ožiaragis</mat-option>
+        <mat-option value="aquarius">Vandenis</mat-option>
+        <mat-option value="pisces">Žuvys</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <div mat-dialog-actions>
+      <button mat-button color="white" type="submit" style="align-content:center">Generuoti</button>
+    </div>
+  </form>
+  <div *ngIf="outputText">
+    <p>{{ outputText }}</p>
+  </div>
 </div>
 <div mat-dialog-actions>
-  <button mat-button [mat-dialog-close]="true">Close</button>
+  <button mat-button (click)="onCancel()">Close</button>
 </div>

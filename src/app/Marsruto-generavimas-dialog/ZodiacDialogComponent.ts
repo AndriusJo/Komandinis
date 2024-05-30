@@ -1,30 +1,19 @@
 import { Component } from '@angular/core';
-import { MatDialogRef } from '@angular/material/dialog';
 
 @Component({
-  selector: 'app-Marsruto-generavimas-dialog',
-  templateUrl: './mgd.component.html'
+  selector: 'app-zodiac-dialog',
+  templateUrl: './zodiac-dialog.component.html',
+  styleUrls: ['./zodiac-dialog.component.css']
 })
-export class MGComponent {
-  bagazoWeight: number;
-
-  constructor(public dialogRef: MatDialogRef<MGComponent>) { }
-
-  onSubmit(): void {
-    // You can handle the submission logic here
-    this.dialogRef.close(this.bagazoWeight);
-  }
-  onCancel(): void {
-    this.dialogRef.close();
-  }
+export class ZodiacDialogComponent {
   selectedSign: string;
   outputText: string;
 
   generateRoute() {
     if (this.selectedSign) {
-      this.outputText = `Žvaigždės sako, kad jūs turėtumėte keliauti į Venerą`;
+      this.outputText = `Generated route for ${this.getZodiacName(this.selectedSign)} (${this.selectedSign})`;
     } else {
-      this.outputText = 'Prašome pasirinkti horoskopo ženklą.';
+      this.outputText = 'Please select a zodiac sign.';
     }
   }
 
