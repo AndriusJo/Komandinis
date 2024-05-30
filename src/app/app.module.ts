@@ -26,6 +26,9 @@ import { ProfilioLangasComponent } from './profilio-langas/profilio-langas.compo
 import { KajutesPlanavimasComponent } from './kajutes-planavimas/kajutes-planavimas.component';
 import { MGComponent } from "./Marsruto-generavimas-dialog/mgd.component";
 import { ServerGifDialogComponent } from './server-gif-dialog/server-gif-dialog.component';
+import { PrisijungimasComponent } from "./prisijungimo-langas/prisijungimas.component";
+import { RegistravimasComponent } from "./registravimo-langas/registravimas.component";
+import { TransportoPasiūlymaiComponent } from "./planetų-transporto-priemonių-pasiūlymai/transporto-pasiūlymai.component";
 
 @NgModule({
   declarations: [
@@ -43,6 +46,9 @@ import { ServerGifDialogComponent } from './server-gif-dialog/server-gif-dialog.
     KajutesPlanavimasComponent,
     MGComponent,
     ServerGifDialogComponent,
+    PrisijungimasComponent,
+    RegistravimasComponent,
+    TransportoPasiūlymaiComponent,
   ],
   imports: [
     BrowserModule,
