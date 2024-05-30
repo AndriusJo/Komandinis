@@ -13,7 +13,6 @@
       color: white !important;
     }
 
-  /* Optional: If you want to style the button's background and border for better visibility */
   .mat-button {
     border: 1px solid white;
   }
@@ -21,36 +20,56 @@
   .mat-button-primary {
     background-color: transparent;
   }
+
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+
+    .form-container mat-form-field {
+      width: 100%;
+    }
+
+    .form-container .mat-dialog-actions {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
 </style>
 
 <h2 mat-dialog-title style="text-align:center">Maršruto generavimas pagal horoskopo ženklą</h2>
 <div mat-dialog-content class="white-text">
-  <form #zodiacForm="ngForm" (ngSubmit)="generateRoute()">
-    <mat-form-field appearance="fill" style="align-items:center">
-      <mat-label style="color:white">Pasirinkite savo horoskopo ženklą</mat-label>
-      <mat-select [(ngModel)]="selectedSign" name="zodiacSign" required>
-        <mat-option value="aries">Avinas</mat-option>
-        <mat-option value="taurus">Jautis</mat-option>
-        <mat-option value="gemini">Dvyniai</mat-option>
-        <mat-option value="cancer">Vėžys</mat-option>
-        <mat-option value="leo">Liūtas</mat-option>
-        <mat-option value="virgo">Mergelė</mat-option>
-        <mat-option value="libra">Svarstyklės</mat-option>
-        <mat-option value="scorpio">Skorpionas</mat-option>
-        <mat-option value="sagittarius">Šaulys</mat-option>
-        <mat-option value="capricorn">Ožiaragis</mat-option>
-        <mat-option value="aquarius">Vandenis</mat-option>
-        <mat-option value="pisces">Žuvys</mat-option>
-      </mat-select>
-    </mat-form-field>
-    <div mat-dialog-actions>
-      <button mat-button color="white" type="submit" style="align-content:center">Generuoti</button>
+  <div class="form-container">
+    <form #zodiacForm="ngForm" (ngSubmit)="generateRoute()">
+      <mat-form-field appearance="fill" style="align-items:center">
+        <mat-label>Pasirinkite savo horoskopo ženklą</mat-label>
+        <mat-select [(ngModel)]="selectedSign" name="zodiacSign" required>
+          <mat-option value="aries">Avinas</mat-option>
+          <mat-option value="taurus">Jautis</mat-option>
+          <mat-option value="gemini">Dvyniai</mat-option>
+          <mat-option value="cancer">Vėžys</mat-option>
+          <mat-option value="leo">Liūtas</mat-option>
+          <mat-option value="virgo">Mergelė</mat-option>
+          <mat-option value="libra">Svarstyklės</mat-option>
+          <mat-option value="scorpio">Skorpionas</mat-option>
+          <mat-option value="sagittarius">Šaulys</mat-option>
+          <mat-option value="capricorn">Ožiaragis</mat-option>
+          <mat-option value="aquarius">Vandenis</mat-option>
+          <mat-option value="pisces">Žuvys</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <div class="mat-dialog-actions">
+        <button mat-button color="white" type="submit">Generuoti</button>
+      </div>
+    </form>
+    <div *ngIf="outputText">
+      <p>{{ outputText }}</p>
     </div>
-  </form>
-  <div *ngIf="outputText">
-    <p>{{ outputText }}</p>
   </div>
 </div>
-<div mat-dialog-actions>
-  <button mat-button (click)="onCancel()">Close</button>
+<div mat-dialog-actions style="justify-content:center">
+  <button mat-button (click)="onCancel()">Uždaryti</button>
 </div>

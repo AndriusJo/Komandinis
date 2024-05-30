@@ -72,7 +72,7 @@ export class PlanasComponent {
 
   pasirinktiGeneruotiMarsruta() {
     const dialogRef = this.dialog.open(MGComponent, {
-      width: '300px',
+      width: '400px',
     });
 
     dialogRef.afterClosed().subscribe(result => {
